@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://mahayatra-backend.onrender.com/api';
+const API_URL = 'https://mahayatra-backend.vercel.app/api';
 
 // Create axios instance
 const api = axios.create({

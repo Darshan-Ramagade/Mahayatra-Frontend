@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Bus, Users, Ticket, TrendingUp, Plus, Edit, Trash2, ArrowLeft } from 'lucide-react';
+import { Bus, Ticket, TrendingUp, Plus, Edit, Trash2, ArrowLeft } from 'lucide-react';
 import { busAPI, bookingAPI } from '../utils/api';
 import { showError, showSuccess, showWarning } from '../utils/toast';
 
@@ -47,7 +47,7 @@ function AdminDashboard() {
     }
     
     fetchDashboardData();
-  }, []);
+  }, [navigate]);
 
   const fetchDashboardData = async () => {
     try {
